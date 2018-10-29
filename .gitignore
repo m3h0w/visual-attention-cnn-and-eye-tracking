@@ -1,1 +1,6 @@
 .ipynb_checkpoints 
+POETdataset/
+weights/
+*.h5
+*.jpg
+*.png
