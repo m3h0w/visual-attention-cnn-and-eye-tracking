@@ -4,3 +4,4 @@ weights/
 *.h5
 *.jpg
 *.png
+features/
