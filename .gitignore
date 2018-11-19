@@ -1,6 +1,8 @@
 .ipynb_checkpoints 
 POETdataset/
+MNIST-data/
 weights/
+features/
 *.h5
 *.jpg
 *.png
