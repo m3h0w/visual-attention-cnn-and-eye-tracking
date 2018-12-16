@@ -1,11 +1,12 @@
 .ipynb_checkpoints 
+__pycache__/
 POETdataset/
 MNIST-data/
 weights/
 features/
-soft_attention_features/
+soft_attention_model/soft_attention_features*
 *.h5
 *.jpg
 *.png
 features/
-soft_attention_images/
+soft_attention_model/soft_attention_images*
