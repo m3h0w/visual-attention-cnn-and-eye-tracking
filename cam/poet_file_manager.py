@@ -33,8 +33,10 @@ def save_poet_to_folders(img_size, mode, ids_list, input_channels=3, main_path =
     
     files_dict = {class_name: class_files for class_name, class_files in zip(classes, files_list)}
     for class_number, (class_name, files) in enumerate(files_dict.items()):
-#         print(files)
-        one_class_images = load_images(utils.filter_by_ids(files, ids_list))
+        print(len(files))
+        files = utils.filter_by_ids(files, ids_list)
+        print(len(files))
+        one_class_images = load_images(files)
 
         new_dir = './' + mode + '/' + str(class_number)
         print(new_dir)
@@ -77,7 +79,7 @@ def load_poet(img_size, keep_ids, input_channels=3, main_path = r'/home/mikey/Da
         x.append(load_images(files))
         y.append([class_number] * len(files))
         print(class_name, class_number)
-        class_map[class_name] = class_number
+        class_map[class_name.replace('*', '')] = class_number
         names.append([utils.filename_from_path(file) for file in files])
         
     X_images = np.concatenate(x)

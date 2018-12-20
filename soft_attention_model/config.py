@@ -1,5 +1,6 @@
-import os
-from utils import Utils
+import os, sys
+sys.path.insert(0,'..') # add parent directory to path
+import utils
 
 class Config:
     main_path = os.path.abspath("/home/mikey/Data/POETdataset/PascalImages/")
@@ -11,4 +12,4 @@ class Config:
     new_dir = 'soft_attention_features_' + str(PATCH_WIDTH)
     new_dir_img = 'soft_attention_images_' + str(PATCH_WIDTH)
     name_to_class_dict = {class_name: i for i, class_name in enumerate(class_names)}
-    train_ids, test_ids = Utils.load_object('../train_ids.pkl'), Utils.load_object('../test_ids.pkl')
+    train_ids, test_ids = utils.load_object('../train_ids.pkl'), utils.load_object('../test_ids.pkl')
