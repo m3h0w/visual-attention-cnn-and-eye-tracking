@@ -6,6 +6,5 @@ features/
 soft_attention_features/
 *.h5
 *.jpg
-*.png
 features/
 soft_attention_images/
