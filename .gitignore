@@ -11,3 +11,5 @@ soft_attention_model/soft_attention_features*
 features/
 soft_attention_model/soft_attention_images*
 checkpoint*
+*.pkl
+*.npy

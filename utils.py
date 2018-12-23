@@ -78,4 +78,24 @@ def plot_confusion_matrix(y_true, y_pred, classes,
     plt.ylabel('True label')
     plt.xlabel('Predicted label')
     plt.tight_layout()
+    plt.grid(False)
     return plt.gcf()
+
+def plot_history(history):
+    # Plot training & validation accuracy values
+    plt.plot(history.history['acc'], color='magenta')
+    plt.plot(history.history['val_acc'], color='cyan')
+    plt.title('Model accuracy')
+    plt.ylabel('Accuracy')
+    plt.xlabel('Epoch')
+    plt.legend(['Train', 'Test'], loc='upper left')
+    plt.show()
+
+    # Plot training & validation loss values
+    plt.plot(history.history['loss'], color='magenta')
+    plt.plot(history.history['val_loss'], color='cyan')
+    plt.title('Model loss')
+    plt.ylabel('Loss')
+    plt.xlabel('Epoch')
+    plt.legend(['Train', 'Test'], loc='upper left')
+    plt.show()

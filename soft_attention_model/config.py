@@ -6,7 +6,7 @@ class Config:
     main_path = os.path.abspath("/home/mikey/Data/POETdataset/PascalImages/")
     class_names = ['dog', 'aeroplane', 'boat', 'bicycle', 'cat', 'cow', 'diningtable', 'horse', 'motorbike','sofa']
     IMG_SIZE = 60*4*2
-    PATCH_WIDTH = 120
+    PATCH_WIDTH = 60
     SMALLER_IMG_SIZE = 150
     T = int(IMG_SIZE/PATCH_WIDTH)**2
     new_dir = 'soft_attention_features_' + str(PATCH_WIDTH)
