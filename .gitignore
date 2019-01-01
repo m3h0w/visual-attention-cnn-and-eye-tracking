@@ -10,3 +10,8 @@ soft_attention_model/soft_attention_features*
 features/
 soft_attention_model/soft_attention_images*
 checkpoint*
+*.png
+*.npy
+*.txt
+cam/*.pkl
+soft_attention_model/*.pkl
