@@ -13,3 +13,4 @@ soft_attention_model/soft_attention_images*
 checkpoint*
 *.pkl
 *.npy
+*.txt
